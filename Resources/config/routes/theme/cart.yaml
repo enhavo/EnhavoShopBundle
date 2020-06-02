@@ -1,35 +1,35 @@
 enhavo_shop_theme_cart_save:
-    path: /save.{_format}
+    path: /cart/save.{_format}
     defaults:
         _controller: sylius.controller.cart:saveAction
         _format: json
 
 enhavo_shop_theme_cart_save_quantity:
-    path: /save/{id}/quantity.{_format}
+    path: /cart/save/{id}/quantity.{_format}
     defaults:
         _controller: sylius.controller.cart:saveQuantityAction
         _format: json
 
 enhavo_shop_theme_cart_clear:
-    path: /clear.{_format}
+    path: /cart/clear.{_format}
     defaults:
         _controller: sylius.controller.cart:clearAction
         _format: json
 
 enhavo_shop_theme_cart_item_add:
-    path: /add.{_format}
+    path: /cart/add.{_format}
     defaults:
         _controller: sylius.controller.cart_item:addAction
         _format: json
 
 enhavo_shop_theme_cart_item_remove:
-    path: /{id}/remove.{_format}
+    path: /cart/{id}/remove.{_format}
     defaults:
         _controller: sylius.controller.cart_item:removeAction
         _format: json
 
 enhavo_shop_theme_cart_summary:
-    path: /summary.{_format}
+    path: /cart/summary.{_format}
     defaults:
         _controller: sylius.controller.cart:summaryAction
         _format: html
